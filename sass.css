@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 130vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.486))), url(images/bsktbl.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.486)), url(images/bsktbl.jpg);
+  background-blend-mode: multiply;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 500px;
+  height: 830px;
+  -webkit-box-shadow: 0px 0px 50px 10px;
+          box-shadow: 0px 0px 50px 10px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.459);
+}
+
+.container h1 {
+  background-image: url(/images/h1bg.gif);
+  height: 150px;
+  width: 400px;
+  margin-bottom: 10px;
+  background-blend-mode: multiply;
+  margin-bottom: 20px;
+}
+
+.container h1:hover {
+  background-color: rgba(0, 0, 0, 0.445);
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-box-shadow: 0px 0px 20px 5px;
+          box-shadow: 0px 0px 20px 5px;
+}
+
+input, textarea::after {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+textarea:focus {
+  position: relative;
+  background-color: transparent;
+  color: black;
+}
+
+input {
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+input:focus {
+  border-radius: 20px;
+  border: 1px solid;
+  height: 30px;
+  text-align: center;
+}
+
+textarea:focus {
+  border: 1px solid;
+  text-align: center;
+}
+
+.bubbles img {
+  width: 50px;
+  -webkit-animation: bubble 5s linear infinite;
+          animation: bubble 5s linear infinite;
+}
+
+.bubbles {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+}
+
+@-webkit-keyframes bubble {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-120vh);
+            transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+@keyframes bubble {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-120vh);
+            transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+.bubbles img:nth-child(1) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.bubbles img:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.bubbles img:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.bubbles img:nth-child(4) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.bubbles img:nth-child(5) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.bubbles img:nth-child(6) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.bubbles img:nth-child(7) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.submit {
+  text-transform: uppercase;
+  border: 2px solid black;
+  padding: 7px;
+}
+
+.submit:hover {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.459);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.address:focus {
+  text-align: justify;
+  padding: 1px;
+}
+/*# sourceMappingURL=sass.css.map */
